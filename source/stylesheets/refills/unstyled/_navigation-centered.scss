@@ -9,13 +9,13 @@
   .mobile-logo {
     display: inline;
     float: left;
+    
+    @include media($large-screen) {
+      display: none;
+    }
 
     img {
       max-height: $centered-navigation-logo-height;
-    }
-
-    @include media($large-screen) {
-      display: none;
     }
   }
 
