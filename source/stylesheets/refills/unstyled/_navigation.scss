@@ -1,4 +1,4 @@
-header.navigation {
+.navigation {
   $large-screen: em(860) !default;
   $large-screen: $large-screen;
 
@@ -22,11 +22,11 @@ header.navigation {
 
   .logo {
     float: left;
+  }
 
-    img {
-      max-height: 2em;
-      padding-right: 1em;
-    }
+  .logo img {
+    max-height: 2em;
+    padding-right: 1em;
   }
 
   nav {
@@ -47,14 +47,14 @@ header.navigation {
     padding: 0;
     width: 100%;
 
-    &.show {
-      display: block;
-    }
-
     @include media ($large-screen) {
       display: block;
       margin: 0;
       padding: 0;
+    }
+
+    &.show {
+      display: block;
     }
   }
 
@@ -70,13 +70,13 @@ header.navigation {
       text-decoration: none;
       width: auto;
     }
+  }
 
-    a {
-      display: inline-block;
+  li.nav-link a {
+    display: inline-block;
 
-      @include media ($large-screen) {
-        padding-right: 1em;
-      }
+    @include media ($large-screen) {
+      padding-right: 1em;
     }
   }
 }
